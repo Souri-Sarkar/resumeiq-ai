@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+streamlit
+
+python-dotenv
+python-multipart
+
+groq
+supabase
+
+pymupdf
+
+sentence-transformers
+
+numpy
+pandas
+scikit-learn

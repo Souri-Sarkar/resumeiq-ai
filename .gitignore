@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+.env
+analysis_history.json
+resume_report.pdf
