@@ -186,3 +186,21 @@ Aspiring AI / ML Engineer | Data Science Enthusiast
 
 GitHub:
 https://github.com/Souri-Sarkar
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home](screenshots/home.png)
+
+### Resume Analysis
+
+![Analysis](screenshots/analysis.png)
+
+### AI Recruiter Feedback
+
+![Feedback](screenshots/feedback.png)
+
+### PDF Report
+
+![Report](screenshots/report.png)
