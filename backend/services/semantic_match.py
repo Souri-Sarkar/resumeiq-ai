@@ -1,14 +1,20 @@
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
-model = SentenceTransformer(
-    "all-MiniLM-L6-v2"
-)
+model = None
 
-def semantic_similarity(
-    resume_text,
-    job_description
-):
+def get_model():
+    global model
+
+    if model is None:
+        model = SentenceTransformer("all-MiniLM-L6-v2")
+
+    return model
+
+
+def semantic_similarity(resume_text, job_description):
+
+    model = get_model()
 
     embeddings = model.encode(
         [resume_text, job_description]
@@ -19,5 +25,4 @@ def semantic_similarity(
         [embeddings[1]]
     )[0][0]
 
-    score = similarity * 100
-    return round(float(score), 2)
+    return round(float(similarity * 100), 2)
